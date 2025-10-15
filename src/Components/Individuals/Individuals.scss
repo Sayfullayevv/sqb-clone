@@ -1,0 +1,56 @@
+@use '../../sass/fonts';
+@use '../../sass/abstract/variables';
+#individuals{
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 70px;
+
+    .individuals{
+        &-txt{
+            font-size: 25px;
+            font-family: fonts.$special-font;
+            font-weight: 500;
+            margin-bottom: 35px;
+        }
+        &-grid{
+            display: grid;
+            grid-template-columns: auto;
+            gap: 20px;
+
+            div{
+                width: 100%;
+                overflow: hidden;
+                background-color: variables.$back-color;
+                border-radius: 10px;
+                padding: 30px 20px;
+                display: flex;
+                flex-direction: column;
+                line-height: 25px;
+                span{
+                    font-size: 20px;
+                    font-family: fonts.$special-font;
+                    font-weight: 400;
+                    margin-bottom: 5px;
+                }
+                img{
+                    margin-bottom: 15px;
+                }
+                img.icon{
+                    width: 75px;
+                    height: 75px;
+                }
+                p{
+                    font-family: fonts.$special-font;
+                    font-size: 15px;
+                    margin-bottom: 15px;
+                }
+                i{
+                    font-size: 50px;
+                    margin-bottom: 30px;
+                    color: variables.$btns;
+                }
+            }
+        }
+    }
+}
+
