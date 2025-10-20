@@ -1,0 +1,37 @@
+#news{
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 40px;
+    .news{
+        &-selections{
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: start;
+            width: 85%;
+            grid-column-gap: 10px;
+            grid-row-gap: 20px;
+            div.yangiliklar{
+                width: 160px;
+            }
+            div.izlanishlar{
+                grid-column: span 2;
+                width: 260px;
+            }
+            div.elonlar{
+                width: 120px;
+            }
+            div{
+                text-align: center;
+                padding: 6px 8px;
+                border-radius:15px;
+                border: 1px solid rgba(128, 128, 128, 0.339);
+                *{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            
+        }
+
+    }
+}
