@@ -2,7 +2,7 @@
 @use "../../sass/fonts";
 
 header {
-  margin-top: 800px;
+  margin-top: 20px;
   max-width: 320px;
   margin: 0 auto;
   .header {
@@ -49,12 +49,6 @@ header {
         font-size: 14px;
       }
     }
-  }
-  .header-bg {
-    background: url("../../assets/Image.png");
-    background-repeat: no-repeat;
-    height: 380px;
-    width: 100%;
   }
 
 
