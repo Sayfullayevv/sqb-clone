@@ -2,13 +2,13 @@
 @use "../../sass/fonts";
 
 header {
-  margin-top: 70px;
+  margin-top: 20px;
   .header {
     background-color: #eef1f5;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     &-text {
       width: 100%;
       height: 20vh;
