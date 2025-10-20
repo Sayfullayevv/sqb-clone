@@ -2,9 +2,7 @@
 @use "../../sass/fonts";
 
 header {
-  margin-top: 20px;
-  max-width: 320px;
-  margin: 0 auto;
+  margin-top: 70px;
   .header {
     background-color: #eef1f5;
     display: flex;
@@ -55,6 +53,7 @@ header {
   .header-two-btn{
     max-width: 320px;
     margin: 0 auto;
+    margin-top: 50px;
     button{
       width: 320px;
       padding: 20px 10px;
