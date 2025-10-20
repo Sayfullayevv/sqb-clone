@@ -1,5 +1,6 @@
 import react from "react";
 import "./Header.scss";
+import bankomat from '../../assets/Image.png'
 
 function Header() {
   return (
@@ -14,8 +15,10 @@ function Header() {
           <b>Tez. Ishonchli. Navbatlarsiz.</b>
           <button>Yaqin bankomatni topish</button>
         </div>
+      <div className="header-bg">
+        <img src={bankomat} alt="" />
       </div>
-      {/* <div className="header-bg"></div> */}
+      </div>
       <div className="header-two-btn">
         <button>Korporativ mijozlar uchun</button>
       </div>
