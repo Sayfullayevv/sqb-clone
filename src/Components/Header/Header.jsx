@@ -15,7 +15,7 @@ function Header() {
           <button>Yaqin bankomatni topish</button>
         </div>
       </div>
-      <div className="header-bg"></div>
+      {/* <div className="header-bg"></div> */}
       <div className="header-two-btn">
         <button>Korporativ mijozlar uchun</button>
       </div>
