@@ -1,6 +1,6 @@
 import react from "react";
 import "./Header.scss";
-import bankomat from '../../assets/Image.png'
+import fridge1 from '../../assets/fridge1.png'
 
 function Header() {
   return (
@@ -16,11 +16,8 @@ function Header() {
           <button>Yaqin bankomatni topish</button>
         </div>
       <div className="header-bg">
-        <img src={bankomat} alt="" />
+        <img src={fridge1} alt="" />
       </div>
-      </div>
-      <div className="header-two-btn">
-        <button>Korporativ mijozlar uchun</button>
       </div>
     </header>
   );

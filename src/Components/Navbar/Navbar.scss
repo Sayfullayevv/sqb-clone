@@ -1,7 +1,7 @@
 @use "../../sass/fonts";
 
 #nav {
-  height: 50px;
+  height: 60px;
   max-width: 320px;
   margin: 0 auto;
   padding-top: 18px;
@@ -10,15 +10,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    &_left{
+      img{
+        width: 150px;
+      }
+    }
     &_right {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 10px;
+      gap: 2px;
 
       div {
-        background-color: #eef1f5;
         padding: 5px;
         border-radius: 5px;
         display: flex;
@@ -27,6 +30,7 @@
         p,
         i {
           font-family: fonts.$special-font;
+          font-size: 14px;
         }
       }
     }

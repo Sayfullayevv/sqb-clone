@@ -1,28 +1,23 @@
 import React from "react";
 import './Navbar.scss'
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/img12.jpg";
 export default function Navbar() {
   return (
     <>
       <nav id="nav">
         <div className="nav-flex">
           <div className="nav-flex_left">
-            <img src={Logo} alt="" />
+            <img src={Logo}  alt="" />
           </div>
           <div className="nav-flex_right">
             <div>
-              <i class="ri-phone-line"></i>
-              <p>1180</p>
+              <p>Biz haqimizda</p>
             </div>
             <div>
-              <i class="ri-logout-box-r-line"></i>
-              <i class="ri-arrow-drop-down-line"></i>
+                <p>Mahsulotlar</p>
             </div>
             <div>
-                UZ
-            </div>
-            <div>
-              <i class="ri-menu-line"></i>
+                <p>Aloqa</p>
             </div>
           </div>
         </div>

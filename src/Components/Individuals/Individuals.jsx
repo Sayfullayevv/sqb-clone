@@ -3,12 +3,24 @@ import keyimg from '../../assets/ipotekaKeys.webp'
 import sqbmini from '../../assets/sqbMobile.png'
 import sqbphone from '../../assets/sqb.mobile (phone).webp'
 import './Individuals.scss'
+import ind from '../../assets/ind.jpg'
+import ind1 from '../../assets/ind1.jpg'
 
 export default function Individuals() {
   return (
     <section id='individuals'>
         <div className="individuals">
-            <p className='individuals-txt'>Jismoniy shaxslar uchun</p>
+            <p className='individuals-txt'>Biz haqimizda</p>
+            <div className="individuals-humans">
+                <div>
+                    <img src={ind} alt="" />
+                    <span>Asoschi</span>
+                </div>
+                <div>
+                    <img src={ind1} alt="" />
+                    <span>Hisobchi</span>
+                </div>
+            </div>
             <div className="individuals-grid">
                 <div>
                     <img src={keyimg} alt="" />

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Vital.scss'
-import carmobile from '../../assets/car-main-page-mob-2.webp'
-import zeroimg from '../../assets/zero-img.webp'
+import fridge1 from '../../assets/fridge1.png'
+import fridge2 from '../../assets/fridge2.png'
 import cardmain from '../../assets/card-main-page-mob-2.webp'
 import museum3d from '../../assets/3Dmuseum.webp'
 
@@ -9,9 +9,10 @@ export default function Vital() {
   return (
     <section id='vital'> 
         <div className="vital">
-            <p className='vital-txt'>Bugun dolzarb</p>
+            <p className='vital-txt'>Mahsulotlar</p>
             <div className="vital-grid">
                 <div className='vital-grid-element'>
+                    <img src={fridge1} alt="" />
                     <p className='heading'>
                         Avtomobil krediti - oddiy va oson!
                     </p>
@@ -31,13 +32,12 @@ export default function Vital() {
                         Ro'yxatdan o'tish uchun hujjatlarni minimal to'plami va kredit to'lashning qulay usullari
                     </p>
                     <button>Batafsil</button>
-                    <img src={carmobile} alt="" />
                 </div>
                 <div className='vital-grid-element'>
+                    <img src={fridge2} alt="" />
                     <span className='heading'>Kredit karta SQB 100 mln so'mgacha</span>
                     <p>Kredit kartasiga SQB Mobile mobil ilovasi orqali hoziroq buyurtma bering</p>
                     <button>Batafsil</button>
-                    <img src={zeroimg} alt="" />
                 </div>
                 <div className='vital-grid-element'>
                     <span className='heading'>Visa Infinite</span>
