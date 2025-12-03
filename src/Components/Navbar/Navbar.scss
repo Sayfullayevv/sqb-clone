@@ -2,20 +2,22 @@
 @use '../../sass/abstract/mixins';
 
 #nav {
-  height: 60px;
-  max-width: 320px;
+  height: 50px;
+  max-width: 300px;
   margin: 0 auto;
-  padding-top: 18px;
-  
+  padding: 18px 20px;
+
   .nav-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &_left{
-      img{
-        width: 150px;
+
+    &_left {
+      img {
+        width: 70px;
       }
     }
+
     &_right {
       display: flex;
       justify-content: center;
@@ -28,6 +30,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         p,
         i {
           font-family: fonts.$special-font;
@@ -39,15 +42,19 @@
 }
 
 
-@include mixins.sm-devices{
-#nav {
-  max-width: 320px;
-  .nav-flex {
-    &_right {
-      div {
-        display: none;
+@include mixins.sm-devices {
+  #nav {
+    max-width: 320px;
+
+    .nav-flex {
+      &_right {
+        div {
+          p {
+            display: none;
+
+          }
+        }
       }
     }
   }
-}
 }
