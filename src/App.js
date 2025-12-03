@@ -4,7 +4,7 @@ import Header from './Components/Header/Header';
 import Individuals from './Components/Individuals/Individuals';
 import History from './Components/History/History';
 import Vital from './Components/Vital/Vital';
-import News from './Components/News/News';
+import Sidebar from './Components/Sidebar/Sidebar';
 
 function App() {
   return (
@@ -14,7 +14,6 @@ function App() {
       <Individuals/>
       <History/>
       <Vital/>
-      <News/>
     </div>
   );
 }

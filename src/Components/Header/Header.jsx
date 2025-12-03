@@ -1,6 +1,7 @@
 import react from "react";
 import "./Header.scss";
 import fridge1 from '../../assets/fridge1.png'
+import Sidebar from "../Sidebar/Sidebar";
 
 function Header() {
   return (
@@ -18,6 +19,7 @@ function Header() {
         <img src={fridge1} alt="" />
       </div>
       </div>
+      <Sidebar/>
     </header>
   );
 }

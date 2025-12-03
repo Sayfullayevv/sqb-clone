@@ -28,10 +28,7 @@ export default function Vital() {
                         <span>Mahsulot narxi</span>
                         <p>250.000.000 so'm</p>
                     </div>
-                    <p>
-                        Sotib olish uchun biz bilan bog'laning !
-                    </p>
-                    <button>Batafsil</button>
+                    <button>Sotib olish</button>
                 </div>
                 <div className='vital-grid-element'>
                     <img src={fridge2} alt="" />
@@ -48,7 +45,7 @@ export default function Vital() {
                         <span>Mahsulot narxi</span>
                         <p>250.000.000 so'm</p>
                     </div>
-                    <button>Batafsil</button>
+                    <button>Sotib olish</button>
                 </div>
             </div>
         </div>
