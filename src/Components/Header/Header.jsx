@@ -7,13 +7,12 @@ function Header() {
     <header>
       <div className="header">
         <div className="header-text">
-          <p>To'lovlar - juda oson!</p>
+          <p>Tanlovda adashmang!</p>
           <span>
-            Endi SQB (UZCARD) bankomatlarida kommunal xizmatlar va mobil aloqa
-            uchun to‘lov mavjud
+              Biznesingiz uchun siz emas biz qayg'uramiz. Yuqori sifatli sovutish moslamalari - qulay va hamyonbop.
           </span>
-          <b>Tez. Ishonchli. Navbatlarsiz.</b>
-          <button>Yaqin bankomatni topish</button>
+          <b>Ishonchli. Sifatli. Hamyonbop. </b>
+          <button>Mahsulotlarni ko'rish</button>
         </div>
       <div className="header-bg">
         <img src={fridge1} alt="" />

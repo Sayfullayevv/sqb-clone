@@ -2,6 +2,7 @@ import React from "react";
 import "./History.scss";
 import Logo from "../../assets/logo.png";
 import history from '../../assets/bank-history-mob.webp'
+import DoughnutWithLabels from "../chart";
 
 export default function History() {
   return (
@@ -15,6 +16,8 @@ export default function History() {
         <button>Batafsil</button>
         <img src={history} className="historyimg" alt="" />
       </div>
+
+      <DoughnutWithLabels/>
     </section>
   );
 }

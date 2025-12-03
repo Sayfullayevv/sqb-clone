@@ -1,4 +1,5 @@
 @use "../../sass/fonts";
+@use '../../sass/abstract/mixins';
 
 #nav {
   height: 60px;
@@ -35,4 +36,18 @@
       }
     }
   }
+}
+
+
+@include mixins.sm-devices{
+#nav {
+  max-width: 320px;
+  .nav-flex {
+    &_right {
+      div {
+        display: none;
+      }
+    }
+  }
+}
 }

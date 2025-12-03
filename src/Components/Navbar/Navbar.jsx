@@ -19,6 +19,7 @@ export default function Navbar() {
             <div>
                 <p>Aloqa</p>
             </div>
+              <i class="ri-menu-line"></i>
           </div>
         </div>
       </nav>

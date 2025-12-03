@@ -27,6 +27,10 @@
                 gap: 15px;
             }
         }
+        &-about{
+            line-height: 20px;
+            margin: 10px 0;
+        }
         &-grid{
             display: grid;
             grid-template-columns: auto;
@@ -51,8 +55,8 @@
                     margin-bottom: 15px;
                 }
                 img.icon{
-                    width: 75px;
-                    height: 75px;
+                    width: auto;
+                    height: auto;
                 }
                 p{
                     font-family: fonts.$special-font;

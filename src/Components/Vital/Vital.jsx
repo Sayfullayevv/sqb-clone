@@ -14,48 +14,41 @@ export default function Vital() {
                 <div className='vital-grid-element'>
                     <img src={fridge1} alt="" />
                     <p className='heading'>
-                        Avtomobil krediti - oddiy va oson!
+                        Fridge LE
                     </p>
                     <div>
-                        <span>Kredit stavkasi</span>
-                        <p>25% dan</p>
+                        <span>Sovutish tizimi</span>
+                        <p>-50° gacha</p>
                     </div>
                     <div>
-                        <span>Kredit muddati</span>
-                        <p>5 yilgacha</p>
+                        <span>Mahsulot kafolati</span>
+                        <p>3 yil</p>
                     </div>
                     <div>
-                        <span>Kredit miqdori</span>
-                        <p>600 mln so'mgacha</p>
+                        <span>Mahsulot narxi</span>
+                        <p>250.000.000 so'm</p>
                     </div>
                     <p>
-                        Ro'yxatdan o'tish uchun hujjatlarni minimal to'plami va kredit to'lashning qulay usullari
+                        Sotib olish uchun biz bilan bog'laning !
                     </p>
                     <button>Batafsil</button>
                 </div>
                 <div className='vital-grid-element'>
                     <img src={fridge2} alt="" />
-                    <span className='heading'>Kredit karta SQB 100 mln so'mgacha</span>
-                    <p>Kredit kartasiga SQB Mobile mobil ilovasi orqali hoziroq buyurtma bering</p>
+                    <span className='heading'>Fridge LTS</span>
+                     <div>
+                        <span>Sovutish tizimi</span>
+                        <p>-50° gacha</p>
+                    </div>
+                    <div>
+                        <span>Mahsulot kafolati</span>
+                        <p>3 yil</p>
+                    </div>
+                    <div>
+                        <span>Mahsulot narxi</span>
+                        <p>250.000.000 so'm</p>
+                    </div>
                     <button>Batafsil</button>
-                </div>
-                <div className='vital-grid-element'>
-                    <span className='heading'>Visa Infinite</span>
-                    <p>Noyob imtiyozlar va xizmatlar to'plamiga ega maxsus bank kartasi</p>
-                    <button>Batafsil</button>
-                    <img src={cardmain} alt="" />
-                </div>
-                <div className='vital-grid-element'>
-                    <span className='heading'>SQB Mobile - barcha kerakli to'lovlar endi telefoningizda</span>
-                    <p>
-                        Qulay mobil ilova yordamida kundalik to'lovlarni amalga oshiring.
-                    </p>
-                    <button className='installnow'>Hoziroq o'rnating!</button>
-                </div>
-                <div className='vital-grid-element'>
-                    <span className='heading'>Muzey 360° onlayn</span>
-                    <p>Toshkentning mashhur diqqatga sazovor joylariga virtual sayohat <br /> <i>Ko'rishni boshlang</i></p>
-                    <img src={museum3d} alt="" />
                 </div>
             </div>
         </div>
