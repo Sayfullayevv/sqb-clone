@@ -6,10 +6,10 @@ ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 
 function DoughnutWithLabels() {
   const data = {
-    labels: ["Sentabr", "Oktabr", "Noyabr" , "Dekabr"],
+    labels: ["2020","2021","2022", "2023", "2024" , "2025"],
     datasets: [
       {
-        data: [50, 25, 25 , 30],
+        data: [50,53,58, 68, 83 , 121],
 backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',

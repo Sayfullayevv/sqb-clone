@@ -6,18 +6,27 @@
 #history{
     max-width: 320px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 40px;
     .history{
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: center;
         gap: 20px;
+        &-flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-        span{
-            font-size: 22px;
-            width: 75%;
-            font-family: fonts.$special-font;
+            img{
+                width: 120px;
+                margin-right: 10px;
+            }
+            span{
+                font-size: 25px;
+                width: 75%;
+                font-family: fonts.$special-font;
+            }
         }
 
         p{
@@ -31,14 +40,15 @@
 
         button{
             width: 100%;
-            padding: 12px 0;
+            padding: 8px 0;
             border-radius: 4px;
             border: none;
             outline: none;
             background-color: variables.$btns;
             color: white;
-            font-size: 18px;
+            font-size: 14px;
             font-family: fonts.$special-font;
+            margin-bottom: 20px;
         }
     }
 }
