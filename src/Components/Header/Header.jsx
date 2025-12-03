@@ -19,7 +19,6 @@ function Header() {
         <img src={fridge1} alt="" />
       </div>
       </div>
-      <Sidebar/>
     </header>
   );
 }

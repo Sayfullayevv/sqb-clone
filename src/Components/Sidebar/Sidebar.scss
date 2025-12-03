@@ -6,14 +6,15 @@
     background-color: white;
     top: 0;
     right: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     #close-sidebar{
         position: absolute;
         top: 20px;
         right: 20px;
-        font-size: 30px;
+        font-size: 28px;
+        cursor: pointer;
     }
     ul{
         display: flex;
@@ -28,3 +29,10 @@
         }
     }
 }
+.sidebar-state-open{
+    display: flex;
+}
+.sidebar-state-close{
+    display: none;
+}
+
