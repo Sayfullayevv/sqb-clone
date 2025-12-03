@@ -10,7 +10,7 @@ export default function Navbar() {
             <img src={Logo}  alt="" />
           </div>
           <div className="nav-flex_right">
-            <div>
+            {/* <div>
               <p>Biz haqimizda</p>
             </div>
             <div>
@@ -18,7 +18,7 @@ export default function Navbar() {
             </div>
             <div>
                 <p>Aloqa</p>
-            </div>
+            </div> */}
               <i class="ri-menu-line"></i>
           </div>
         </div>
