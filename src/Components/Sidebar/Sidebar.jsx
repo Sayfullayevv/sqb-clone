@@ -13,15 +13,15 @@ export default function Sidebar({holat , setHolat}) {
                 <i class="ri-close-large-line" id="close-sidebar" onClick={()=>chngeHolat()} ></i>
                 <ul>
                     <li>
-                        Asosiy
+                        <a href="#home" onClick={()=>chngeHolat()}>Asosiy</a>
                     </li>
                     <li>
-                        Biz haqimizda
+                        <a href="#individuals" onClick={()=>chngeHolat()}>Biz haqimizda</a>
                     </li>
                     <li>
-                        Mahsulotlar
+                        <a href="#vital" onClick={()=>chngeHolat()}>Mahsulotlar</a>
                     </li>
-                    <li>Aloqa</li>
+                    <li><a href="#contact" onClick={()=>chngeHolat()}>Aloqa</a></li>
                 </ul>
             </div>
         </>

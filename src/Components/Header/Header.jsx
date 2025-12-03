@@ -5,7 +5,7 @@ import Sidebar from "../Sidebar/Sidebar";
 
 function Header() {
   return (
-    <header>
+    <header id="home">
       <div className="header">
         <div className="header-text">
           <p>Tanlovda adashmang!</p>
