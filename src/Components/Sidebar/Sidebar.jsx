@@ -5,6 +5,7 @@ export default function Sidebar() {
     return (
         <>
             <div className="sidebar">
+                <i class="ri-close-circle-line" id="close-sidebar"></i>
                 <ul>
                     <li>
                         Asosiy
