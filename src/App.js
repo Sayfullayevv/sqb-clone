@@ -1,19 +1,17 @@
 import './App.scss';
-import Navbar from './Components/Navbar/Navbar';
-import Header from './Components/Header/Header';
-import Individuals from './Components/Individuals/Individuals';
-import History from './Components/History/History';
-import Vital from './Components/Vital/Vital';
+import { BrowserRouter, Route, Routes } from "react-router";
 import Sidebar from './Components/Sidebar/Sidebar';
+import Product from './Components/Pages/Product';
+import { products } from "./assets/all_products";
+import Main from './Components/Main/Main';
 
 function App() {
   return (
     <div className="app">
-      <Navbar/>
-      <Header/>
-      <Individuals/>
-      <History/>
-      <Vital/>
+      <Routes>
+        <Route path='' element={<Main/>}/>
+        <Route path='/product/:id' element={<Product products={products} />}/>
+      </Routes>
     </div>
   );
 }
