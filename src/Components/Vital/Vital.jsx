@@ -30,7 +30,8 @@ export default function Vital() {
                                     <span>Mahsulot kafolati</span>
                                     <p>3 yil</p>
                                 </div>
-                                <Link className='btnsss' to={`/product/${e.productId}`}>
+                                <Link className='btnsss' to={`/product/${e.productId}`} 
+                                onClick={()=>{window.scrollTo(0,0)}}>
                                     <button id='buynow'>Sotib olish</button>
                                 </Link>
                             </div>
