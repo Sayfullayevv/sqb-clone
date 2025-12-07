@@ -4,6 +4,8 @@ import Navbar from "../Navbar/Navbar";
 import "./Product.scss";
 import { useContext } from "react";
 import { ShopContext } from "../../Context/Context";
+import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 
 export default function Product({ products }) {
     const { id } = useParams();
@@ -56,6 +58,13 @@ export default function Product({ products }) {
                     </div>
                 </div>
             </div>
+            <div style={{
+                marginTop: '120px'
+            }}>
+                <Contact />
+
+            </div>
+            <Footer />
         </>
     );
 }

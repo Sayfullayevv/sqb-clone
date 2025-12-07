@@ -16,7 +16,7 @@ export default function Vital() {
                     {products.map((e) => {
                         return (
                             <div className='vital-grid-element'>
-                                <Link to={`/product/${e.productId}`}>
+                                <Link to={`/product/${e.productId}`} onClick={()=>{window.scrollTo(0,0)}}>
                                     <img src={e.productImage} alt="" />
                                 </Link>
                                 <p className='heading'>
@@ -29,10 +29,6 @@ export default function Vital() {
                                 <div>
                                     <span>Mahsulot kafolati</span>
                                     <p>3 yil</p>
-                                </div>
-                                <div>
-                                    <span>Mahsulot narxi</span>
-                                    <p>{e.productPrice} so'm</p>
                                 </div>
                                 <Link className='btnsss' to={`/product/${e.productId}`}>
                                     <button id='buynow'>Sotib olish</button>

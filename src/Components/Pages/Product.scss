@@ -1,3 +1,5 @@
+@use '../../sass/abstract/mixins';
+
 .product {
     max-width: 320px;
     margin: 0 auto;
@@ -6,27 +8,32 @@
     flex-direction: column;
     gap: 20px;
 
-    div{
-        *{
+    div {
+        * {
             margin-bottom: 10px;
         }
-        .productName{
+
+        .productName {
             font-size: 18px;
         }
-        .productDesc{
+
+        .productDesc {
             line-height: 25px;
             font-size: 14px;
         }
-        .count_product{
+
+        .count_product {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            p{
-                b{
+
+            p {
+                b {
                     color: rgb(164, 9, 9);
                 }
             }
-            button{
+
+            button {
                 padding: 10px 20px;
                 background-color: #004D7E;
                 border-radius: 4px;
@@ -34,6 +41,103 @@
                 outline: none;
                 color: white;
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+@include mixins.lg-devices {
+    .product {
+        max-width: 768px;
+        flex-direction: row-reverse;
+        align-items: center;
+        
+        img.productImage {
+            width: 350px;
+        }
+
+        div {
+            * {
+                margin-bottom: 10px;
+            }
+
+            .productName {
+                font-size: 18px;
+            }
+
+            .productDesc {
+                line-height: 25px;
+                font-size: 14px;
+            }
+
+            .count_product {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    b {
+                        color: rgb(164, 9, 9);
+                    }
+                }
+
+                button {
+                    padding: 10px 20px;
+                    background-color: #004D7E;
+                    border-radius: 4px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@include mixins.xl-devices {
+    .product {
+        max-width: 1200px;
+        justify-content: space-evenly;
+        img.productImage {
+            width: 500px;
+        }
+
+        div {
+            width: 500px;
+            * {
+                margin-bottom: 10px;
+            }
+
+            .productName {
+                font-size: 18px;
+            }
+
+            .productDesc {
+                line-height: 25px;
+                font-size: 14px;
+            }
+
+            .count_product {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    b {
+                        color: rgb(164, 9, 9);
+                    }
+                }
+
+                button {
+                    padding: 10px 20px;
+                    background-color: #004D7E;
+                    border-radius: 4px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    cursor: pointer;
+                }
             }
         }
     }

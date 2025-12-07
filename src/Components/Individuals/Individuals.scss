@@ -1,42 +1,49 @@
 @use '../../sass/fonts';
 @use '../../sass/abstract/variables';
-#individuals{
+@use '../../sass/abstract/mixins';
+
+
+#individuals {
     max-width: 320px;
     margin: 0 auto;
     margin-top: 70px;
 
-    .individuals{
-        &-txt{
+    .individuals {
+        &-txt {
             font-size: 25px;
             font-family: fonts.$special-font;
             font-weight: 500;
             margin-bottom: 35px;
             text-align: center;
         }
-        &-humans{
+
+        &-humans {
             display: grid;
             grid-template-columns: auto;
             gap: 20px;
             align-items: center;
             justify-content: center;
             margin-bottom: 30px;
-            div{
+
+            div {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 15px;
             }
         }
-        &-about{
+
+        &-about {
             line-height: 20px;
             margin: 10px 0;
         }
-        &-grid{
+
+        &-grid {
             display: grid;
             grid-template-columns: auto;
             gap: 20px;
 
-            div{
+            div {
                 width: 100%;
                 overflow: hidden;
                 background-color: variables.$back-color;
@@ -45,25 +52,30 @@
                 display: flex;
                 flex-direction: column;
                 line-height: 25px;
-                span{
+
+                span {
                     font-size: 20px;
                     font-family: fonts.$special-font;
                     font-weight: 400;
                     margin-bottom: 5px;
                 }
-                img{
+
+                img {
                     margin-bottom: 15px;
                 }
-                img.icon{
+
+                img.icon {
                     width: auto;
                     height: auto;
                 }
-                p{
+
+                p {
                     font-family: fonts.$special-font;
                     font-size: 15px;
                     margin-bottom: 15px;
                 }
-                i{
+
+                i {
                     font-size: 50px;
                     margin-bottom: 30px;
                     color: variables.$btns;
@@ -73,3 +85,75 @@
     }
 }
 
+@include mixins.lg-devices {
+    #individuals {
+        max-width: 768px;
+        margin-top: 50px;
+
+        .individuals {
+
+            &-humans {
+                grid-template-columns: auto auto;
+                gap: 50px;
+            }
+
+            &-about {
+                line-height: 24px;
+                margin: 10px 0;
+            }
+
+            &-grid {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 20px;
+
+                div {
+                    border-radius: 10px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 50px;
+                    padding-bottom: 30px;
+
+
+                    img.icon {
+                        width: 200px;
+                        margin-left: 64px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include mixins.xl-devices {
+    #individuals {
+        max-width: 1200px;
+        margin-top: 50px;
+
+        .individuals {
+
+            &-humans {
+                grid-template-columns: auto auto;
+                gap: 50px;
+            }
+
+            &-about {
+                text-align: center;
+                width: 500px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 20px 0;
+            }
+
+            &-grid {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 20px;
+
+            }
+        }
+    }
+
+}

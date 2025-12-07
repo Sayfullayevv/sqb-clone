@@ -3,42 +3,46 @@
 @use '../../sass/abstract/mixins';
 
 
-#history{
+#history {
     max-width: 320px;
     margin: 0 auto;
     margin-top: 50px;
-    .history{
+
+    .history {
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: center;
         gap: 20px;
-        &-flex{
+
+        &-flex {
             display: flex;
             align-items: center;
             justify-content: center;
 
-            img{
+            img {
                 width: 120px;
                 margin-right: 10px;
             }
-            span{
+
+            span {
                 font-size: 25px;
                 width: 75%;
                 font-family: fonts.$special-font;
             }
         }
 
-        p{
+        p {
             font-size: 15px;
             width: 85%;
             font-family: fonts.$special-font;
         }
-        img.historyimg{
+
+        img.historyimg {
             width: 100%;
         }
 
-        button{
+        button {
             width: 100%;
             padding: 8px 0;
             border-radius: 4px;
@@ -49,6 +53,57 @@
             font-size: 14px;
             font-family: fonts.$special-font;
             margin-bottom: 50px;
+        }
+    }
+}
+
+@include mixins.lg-devices {
+    #history {
+        max-width: 768px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+
+        .chart {
+            width: 400px;
+            height: auto;
+        }
+
+        .history {
+
+            p {
+                font-size: 16px;
+                width: 100%;
+                line-height: 25px;
+                font-family: fonts.$special-font;
+            }
+        }
+    }
+}
+
+@include mixins.xl-devices {
+    #history {
+        max-width: 1200px;
+        margin-top: 40px;
+        .chart {
+            width: 550px;
+            height: auto;
+        }
+
+        .history {
+            width: 500px;
+            &-flex{
+                span{
+                    font-size: 30px;
+                }
+            }
+            p {
+                font-size: 16px;
+                width: 100%;
+                line-height: 25px;
+                font-family: fonts.$special-font;
+            }
         }
     }
 }

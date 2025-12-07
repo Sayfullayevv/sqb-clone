@@ -9,17 +9,19 @@ export default function History() {
     <section id="history">
       <div className="history">
         <div className="history-flex">
-          <img src={Logo}  className="history-logo" alt="" />
+          <img src={Logo} className="history-logo" alt="" />
           <span>- 5 yillik tarix</span>
         </div>
         <p>
           Ishlab chiqarish bo'yicha faoliyatimizni 2020-yilda boshlagan bo'lishimizga qaramay, qisqa fursatda yurtimizda tadbirkorlikning rivojlanishiga, qolaversa, bu orqali iqtisodiyotiga ulkan hissa qo'shdi.
         </p>
-        <img src={history} className="historyimg"/>
+        <img src={history} className="historyimg" />
         <button>Batafsil</button>
       </div>
 
-      <DoughnutWithLabels />
+      <div className="chart">
+        <DoughnutWithLabels />
+      </div>
     </section>
   );
 }

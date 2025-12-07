@@ -3,3 +3,20 @@
         @content;
     }
 }
+
+@mixin md-devices {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin lg-devices {
+    @media screen and (min-width: 992px){
+        @content;
+    }
+}
+@mixin xl-devices{
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}

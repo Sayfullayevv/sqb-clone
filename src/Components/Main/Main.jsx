@@ -4,6 +4,8 @@ import Individuals from '../Individuals/Individuals';
 import History from '../History/History';
 import Vital from '../Vital/Vital';
 import Sidebar from '../Sidebar/Sidebar';
+import Footer from '../Footer/Footer';
+import Contact from '../Contact/Contact';
 
 function Main() {
   return (
@@ -13,6 +15,8 @@ function Main() {
       <Individuals/>
       <History/>
       <Vital/>
+      <Contact/>
+      <Footer/>
     </>
   );
 }

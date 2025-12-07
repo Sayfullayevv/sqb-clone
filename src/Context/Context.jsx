@@ -11,8 +11,10 @@ const defaultCart = () => {
   return cart;
 };
 
+
 const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(defaultCart());
+  const [feedback , setFeedback] = useState([])
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));    
@@ -38,6 +40,8 @@ const ShopContextProvider = (props) => {
     removeFromCart,
     products,
     total,
+    feedback,
+    setFeedback,
   };
 
   return (

@@ -1,0 +1,99 @@
+@use '../../sass/abstract/mixins';
+
+
+#footer{
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    margin-top: 40px;
+    padding: 20px 10px;
+
+    .footer-lgtx{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        img{
+            width: 70px;
+        }
+        p{
+            font-size: 13.5px;
+        }
+    }
+    .footer-lnks{
+        margin: 20px 0;
+    }
+    .footer-lnks , .footer-social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            li{
+                font-size: 13px;
+            }
+        }
+    }
+
+}
+
+@include mixins.lg-devices{
+    #footer{
+    max-width: 768px;
+
+    .footer-lgtx{
+        img{
+            width: 120px;
+        }
+        p{
+            font-size: 15.5px;
+            width: 550px;
+        }
+    }
+    .footer-lnks{
+        margin: 20px 0;
+    }
+    .footer-lnks , .footer-social{
+        ul{
+            li{
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+}
+
+@include mixins.xl-devices{
+    #footer{
+    max-width: 1200px;
+
+    .footer-lgtx{
+        img{
+            width: 120px;
+        }
+        p{
+            font-size: 15.5px;
+        }
+    }
+    .footer-lnks{
+        margin: 20px 0;
+    }
+    .footer-lnks , .footer-social{
+        ul{
+            li{
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+}
+

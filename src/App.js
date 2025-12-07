@@ -4,6 +4,8 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import Product from './Components/Pages/Product';
 import { products } from "./assets/all_products";
 import Main from './Components/Main/Main';
+import Feedbacks from './Components/Feedbacks';
+
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <Routes>
         <Route path='' element={<Main/>}/>
         <Route path='/product/:id' element={<Product products={products} />}/>
+        <Route path="/admin/fdbacks/" element={<Feedbacks/>}/>
       </Routes>
     </div>
   );

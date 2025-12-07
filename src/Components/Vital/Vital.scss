@@ -68,15 +68,16 @@
                         color: #D52023;
                     }
                 }
-                    #buynow {
-                        width: 100%;
-                        padding: 10px 25px;
-                        background-color: white;
-                        color: #D52023;
-                        border-radius: 5px;
-                        border: none;
-                        margin: 20px 0;
-                    }
+
+                #buynow {
+                    width: 100%;
+                    padding: 10px 25px;
+                    background-color: white;
+                    color: #D52023;
+                    border-radius: 5px;
+                    border: none;
+                    margin: 20px 0;
+                }
 
 
                 button.installnow {
@@ -92,4 +93,41 @@
 
         }
     }
+}
+
+@include mixins.lg-devices {
+    #vital {
+        max-width: 768px;
+
+        .vital {
+            &-txt {
+                font-size: 24px;
+            }
+
+            &-grid {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 30px;
+            }
+        }
+    }
+}
+
+@include mixins.xl-devices {
+    #vital {
+        max-width: 1200px;
+
+        .vital {
+            &-txt {
+                font-size: 24px;
+            }
+
+            &-grid {
+                display: grid;
+                grid-template-columns: repeat(2 , 320px);
+                gap: 30px;
+            }
+        }
+    }
+
 }
